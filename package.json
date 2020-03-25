@@ -1,0 +1,25 @@
+{
+  "name": "express-cop",
+  "version": "0.1.0",
+  "description": "Basic Express COP scaffold",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mpargar/Express-COP.git"
+  },
+  "keywords": [
+    "cop",
+    "express",
+    "nodejs",
+    "node"
+  ],
+  "author": "Miguel Parra Garcia",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mpargar/Express-COP/issues"
+  },
+  "homepage": "https://github.com/mpargar/Express-COP#readme"
+}
