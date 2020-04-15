@@ -6,7 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "serve": "nodemon App.js",
-    "migrations": "sequelize-cli db:migrate"
+    "undomigrations": "sequelize-cli db:migrate:undo:all",
+    "migrations": "sequelize-cli db:migrate",
+    "remigrate": "sequelize-cli db:migrate:undo:all && sequelize-cli db:migrate"
   },
   "repository": {
     "type": "git",
