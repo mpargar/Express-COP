@@ -12,25 +12,25 @@ Place.use(cors());
 
 Place.get("/", (req, res) => {
   res.status(200).json({
-    message: "Metodo get"
+    message: "Metodo get",
   });
 });
 
 Place.post("/", (req, res) => {
   res.status(200).json({
-    message: "Metodo post"
+    message: "Metodo post",
   });
 });
 
 Place.put("/", (req, res) => {
   res.status(200).json({
-    message: "Metodo post"
+    message: "Metodo put",
   });
 });
 
 Place.delete("/", (req, res) => {
   res.status(200).json({
-    message: "Metodo post"
+    message: "Metodo delete",
   });
 });
 
