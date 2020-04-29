@@ -8,7 +8,8 @@
     "serve": "nodemon App.js",
     "undomigrations": "sequelize-cli db:migrate:undo:all",
     "migrations": "sequelize-cli db:migrate",
-    "remigrate": "sequelize-cli db:migrate:undo:all && sequelize-cli db:migrate"
+    "remigrate": "sequelize-cli db:migrate:undo:all && sequelize-cli db:migrate && sequelize-cli db:seed:all",
+    "seedAll": "sequelize-cli db:seed:all"
   },
   "repository": {
     "type": "git",

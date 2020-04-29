@@ -15,7 +15,7 @@ app.use(express.json());
 app.use(cors());
 
 // Routes
-app.use("/lugares", Place);
+app.use("/lugares", Place.api);
 
 app.listen(3000, () => {
   // Set up
