@@ -1,5 +1,5 @@
 const bcrypt = require("bcrypt");
-const privateKey = require("./privateKey.js");
+const jwtConfig = require("./jwtConfig");
 module.exports = {
   /**
    * Esta funcion encripta contraseñas
@@ -15,4 +15,8 @@ module.exports = {
    * */
   verifyPassword: (plaintTextPassword, encryptedPassword) =>
     bcrypt.compareSync(plaintTextPassword, encryptedPassword),
+  /**
+   * Configuración de los tokens
+   */
+  jwtConfig,
 };

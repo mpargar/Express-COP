@@ -10,4 +10,12 @@ User.use(express.urlencoded({ extended: false }));
 User.use(express.json());
 User.use(cors());
 
+User.post("/login", (req, res) => {
+  services.login(req.body, res);
+});
+
+User.post("/isAuth", (req, res) => {
+  services.isAuth(req, res);
+});
+
 module.exports = User;
