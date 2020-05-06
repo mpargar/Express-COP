@@ -1,4 +1,5 @@
 const bcrypt = require("bcrypt");
+const privateKey = require("./privateKey.js");
 module.exports = {
   /**
    * Esta funcion encripta contraseñas

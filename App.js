@@ -8,6 +8,7 @@ const cors = require("cors");
 
 // Components
 const Place = require("./components/Place/Place");
+const User = require("./components/Users/User");
 
 const app = express();
 app.use(express.urlencoded({ extended: false }));
@@ -16,6 +17,7 @@ app.use(cors());
 
 // Routes
 app.use("/lugares", Place.api);
+app.use("/usuarios", User.api);
 
 app.listen(3000, () => {
   // Set up
