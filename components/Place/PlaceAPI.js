@@ -6,6 +6,8 @@ const express = require("express");
 const cors = require("cors");
 const services = require("./Services");
 const Place = express.Router();
+const middleware = require("../Middleware");
+
 Place.use(express.urlencoded({ extended: false }));
 Place.use(express.json());
 Place.use(cors());
@@ -16,7 +18,7 @@ Place.get("/", (req, res) => {
   });
 });
 
-Place.post("/", (req, res) => {
+Place.post("/", middleware, (req, res) => {
   services.create(req.body, res);
 });
 
